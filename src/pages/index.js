@@ -1,30 +1,16 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
-import { Icon, Input, Button } from 'antd';
-import Header from '../components/header'
-import Container from '../components/container'
+import ThemeColor from '../containers/themeColor'
 
-
-class Index extends React.Component {
+class Index extends Component {
     constructor() {
         super()
-        this.state = {
-            themeColor: '#002bff'
-        }
     }
-    changeColor(themeColor) {
-        this.setState({
-            themeColor
-        })
-    }
+// http://img.ivsky.com/img/tupian/pre/201802/11/lofoten-010.jpg
     render() {
         return (
             <div>
-                <Header themeColor = { this.state.themeColor } />
-                <Container 
-                    themeColor = { this.state.themeColor }  
-                    changeColor = {this.changeColor.bind(this)}
-                    />
+                <ThemeColor />
                 <div>
                     <Link to="/chat">chat</Link>
                 </div>
@@ -32,4 +18,5 @@ class Index extends React.Component {
         )
     }
 }
-export default Index;
+
+export default Index

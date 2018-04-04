@@ -1,19 +1,20 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { Button } from 'antd'
+import jUI from '../asset/js/jUI'
 
 class Container extends Component {
     static propTypes = {
         themeColor : PropTypes.string,
         changeColor: PropTypes.func
-    };
+    }
     
     constructor(){
         super()
-    };
-    
+    }
     
     changeColor(color) {
+        jUI.showLoading()
         const {changeColor} = this.props
         changeColor(color)
     }
