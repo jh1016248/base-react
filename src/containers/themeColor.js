@@ -5,7 +5,7 @@ import { changeThemeColor } from '../reducer/themeColor'
 import Header from '../components/header'
 import Container from '../components/container'
 
-class ColorTheme extends Component {
+class ThemeColor extends Component {
     static propTypes = {
         themeColor: PropTypes.string,
         changeThemeColor: PropTypes.func
@@ -49,4 +49,4 @@ const mapDispatchToProps = dispatch => {
 export default connect(
     mapStateToProps,
     mapDispatchToProps
-)(ColorTheme)
+)(ThemeColor)

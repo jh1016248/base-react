@@ -7,5 +7,4 @@ class Root extends React.Component{
     )
   }
 } 
-
 export default Root;

@@ -1,6 +1,6 @@
 let jUI = function (){};
 let El = function (){};
-
+require('./jUI.less')
 El.prototype = {
     dom: null,
     getEl: function (dom){
@@ -57,6 +57,9 @@ jUI.prototype = {
         else{
             console.log(2)
         }
+        let dom = document.createElement("div");
+        dom.className = 'loading';
+        $("body").dom.appendChild(dom)
     },
     hideLoading() {
 
@@ -74,7 +77,7 @@ jUI.prototype = {
             cancel: function (){}
         }
     },
-    alert() {
+    toast() {
 
     },
     showMsg() {

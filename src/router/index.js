@@ -1,12 +1,13 @@
-import React, { render } from 'react';
-import { Router, IndexRoute, Link, Route, browserHistory, hashHistory } from 'react-router';
+import React, { Component } from 'react';
+import { Router, IndexRoute, Link, Route, browserHistory } from 'react-router';
 import Index from '../pages/index';
 import Chat from '../pages/chat';
 
-class App extends React.Component {
+class App extends Component {
 	constructor(props) {
-		super(props)
-	}
+        super(props)
+    }
+
 	render() {
 		return (
 			<div>
@@ -16,7 +17,7 @@ class App extends React.Component {
 	}
 }
 
-class router extends React.Component {
+class router extends Component {
 	constructor(props) {
 		super(props)
 	}

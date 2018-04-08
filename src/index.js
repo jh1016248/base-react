@@ -10,7 +10,7 @@ import './asset/css/reset.css';
 import './asset/css/common.less';
 import './asset/css/index.less';
 
-const store = createStore(themeReducer)
+const store = createStore(themeReducer);
 
 render(
     <Provider store={store}>

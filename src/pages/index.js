@@ -6,10 +6,9 @@ class Index extends Component {
     constructor() {
         super()
     }
-// http://img.ivsky.com/img/tupian/pre/201802/11/lofoten-010.jpg
     render() {
         return (
-            <div>
+            <div className="wrap">
                 <ThemeColor />
                 <div>
                     <Link to="/chat">chat</Link>
