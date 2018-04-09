@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 import ThemeColor from '../containers/themeColor';
-import http from '../api/index';
+import { login } from '../api/index';
 
 class Index extends Component {
     constructor() {
@@ -9,7 +9,7 @@ class Index extends Component {
     }
 
     handelClick() {
-        http.login('10086','123321')
+        login('10086','123456')
             .then(res => {
                 
             })
