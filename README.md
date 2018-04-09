@@ -13,4 +13,4 @@ npm run build
 ##参考
 * [react小书](http://huziketang.mangojuice.top/books/react/) 
 
-!zepto使用的需要改node_modules/zepto/dist/zepto.js文件，第七行window去掉
+!zepto使用的话需要改node_modules/zepto/dist/zepto.js文件，第七行window去掉
