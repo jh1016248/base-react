@@ -1,15 +1,14 @@
-# react-music-player
-music player build with React
+# react项目基础框架
+``` 引入的库有：
+react, react-router, react-redux, less, ant-design, prop-types, axios
 
 ### overview
-![](https://github.com/xiaolin3303/react-music-player/blob/master/overview/music-player.png?raw=true)
-![](https://github.com/xiaolin3303/react-music-player/blob/master/overview/music-list.png?raw=true)
-
 ### 如何运行
 
 **开发启动**
 ```shell
 npm start
+访问 http://localhost:3001
 ```
 
 **编译产品**
@@ -17,23 +16,13 @@ npm start
 npm run build
 ```
 
+**参考**
+react小书: http://huziketang.mangojuice.top/books/react/
+ant-design: https://ant.design/docs/react/introduce-cn
+prop-types使用static关键字报错: https://blog.csdn.net/qq_35388564/article/details/76084602
+
+
+
 **运行各阶段例子**
 
-修改`webpack.config.js`中`entry`
-
-比如`Router`例子
-```javascript
-entry: [
-    'webpack-dev-server/client?http://localhost:3000',
-    'webpack/hot/only-dev-server',
-    'react-hot-loader/patch',
-    path.join(__dirname, 'app/router/index.js')
-],
-```
-
-axios.get("http://localhost:3001/api/userInfo?name=jh").then((res) => {
-	console.log(res.request.response)
-	this.setState({
-		user: JSON.parse(res.request.response)
-	})
-})
+遇到的问题

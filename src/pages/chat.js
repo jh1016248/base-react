@@ -4,7 +4,7 @@ import {Link} from 'react-router';
 class Chat extends React.Component {
   render () {
     return (
-      <div>
+      <div className="wrap">
      	<p>hello Chat</p>
         <Link to="/">index</Link>
       </div>
