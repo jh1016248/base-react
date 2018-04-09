@@ -22,8 +22,8 @@ class Container extends Component {
         return (
           <div>
             <p style= {{ color: themeColor }} >container</p>
-            <Button onClick={this.changeColor.bind(this, '#f00')}>红色</Button>
-            <Button onClick={this.changeColor.bind(this, '#002bff')}>蓝色</Button>
+            <Button onClick={this.changeColor.bind(this, '#f00')}>red</Button>
+            <Button onClick={this.changeColor.bind(this, '#002bff')}>blue</Button>
           </div>
         )
     }

@@ -3,7 +3,7 @@ const CHANGE_THEMECOLOR = 'CHANGE_THEMECOLOR';
 let ThemeColor = (state, action) => {
     if(!state) {
         state = {
-            themeColor: '#b9ccda'
+            themeColor: '#000'
         }
     }
     switch (action.type) {

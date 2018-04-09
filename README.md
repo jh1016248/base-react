@@ -1,5 +1,6 @@
 ##react项目基础框架
-react, react-router, react-redux, less, ant-design, prop-types, axios
+
+引入: react, react-router, react-redux, less, ant-design, prop-types, axios, zepto
 
 ##启动
 npm start
@@ -10,6 +11,6 @@ npm start
 npm run build
 
 ##参考
-
 * [react小书](http://huziketang.mangojuice.top/books/react/) 
-* [ant-design](https://ant.design/docs/react/introduce-cn)
+
+!zepto使用的需要改node_modules/zepto/dist/zepto.js文件，第七行window去掉

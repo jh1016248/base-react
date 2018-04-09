@@ -20,7 +20,7 @@ class Index extends Component {
             <div className="wrap">
                 <ThemeColor />
                 <div>
-                    <a href="javascript:;" onClick={this.handelClick.bind(this)}>http请求</a>
+                    <a href="javascript:;" onClick={this.handelClick.bind(this)}>http request</a>
                     <br/>
                     <Link to="/chat">to chat</Link>
                 </div>
