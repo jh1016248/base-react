@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Router, IndexRoute, Link, Route, browserHistory } from 'react-router';
+import { Router, IndexRoute, Link, Route, hashHistory } from 'react-router';
 import Index from '../pages/index';
 import Chat from '../pages/chat';
 
@@ -26,7 +26,7 @@ class router extends Component {
 	}
 	render() {
 		return (
-			<Router history={browserHistory}>
+			<Router history={hashHistory}>
 				<Route path="/" component={App}>
 					<IndexRoute component={Index} />
 					<Route path="/chat" component={Chat}></Route>
