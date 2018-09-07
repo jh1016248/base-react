@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Router, IndexRoute, Link, Route, hashHistory } from 'react-router';
 import Index from '../pages/index';
 import Chat from '../pages/chat';
-
+//按需加载 https://segmentfault.com/a/1190000007141049
 class App extends Component {
 	constructor(props) {
         super(props)
